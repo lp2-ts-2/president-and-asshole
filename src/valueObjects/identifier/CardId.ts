@@ -1,0 +1,3 @@
+class CardId extends BaseId {
+    
+}
