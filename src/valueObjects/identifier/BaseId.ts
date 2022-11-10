@@ -1,18 +1,20 @@
 import ValueObject from "../ValueObject";
+import { v4 as uuid } from "uuid"
 
 abstract class BaseId implements ValueObject {
 
-    private value: UUID;
+    private value;
 
-    protected BaseId(value: UUID) {
-        this.value = value
+    constructor(value: string) {
+        this.value = uuid(value);
     }
 
-    getValue(): String {
-        return toString(value);
+    getValue(value: string): String {
+        toString = (): String => {
+            return value;
+        };
     }
 
-    @Override
     equals(o: Object): boolean {
         if(this == o) return true;
         if(o == null || getClass() != o.getClass()) return false;
@@ -20,7 +22,6 @@ abstract class BaseId implements ValueObject {
         return this.value.equals(baseId.value); 
     }
 
-    @Oveerride
     hashCode(): number {
         return Objects.hash(value);
     }

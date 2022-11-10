@@ -1,9 +1,10 @@
+import ValueObject from "./ValueObject";
 
-enum Suit {
-    HEARTS,
-    DIAMONDS,
-    CLUBS,
-    SPADES
+class Suit implements ValueObject {
+    HEARTS = "HEARTS";
+    DIAMONDS = "DIAMONDS";
+    CLUBS = "CLUBS";
+    SPADES = "SPADES";
 }
 
 export default Suit;

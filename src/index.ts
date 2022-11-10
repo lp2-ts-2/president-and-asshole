@@ -1,3 +1,3 @@
-import Suit from "./valueObjects/Suit";
+import Card from "./entities/Card";
 
-console.log(Suit[1])
+console.log(Card)
