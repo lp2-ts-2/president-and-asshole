@@ -16,7 +16,7 @@ enum CardValue {
 
 let value: number;
 
-CardValue(value: number): void {
+CardValue(value) {
     this.value = value;
 }
 
